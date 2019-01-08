@@ -1,0 +1,271 @@
+
+/* ========================== Elements généraux de la page ========================== */
+
+body {
+	    font-family: arial,sans-serif;
+	    color: #222;
+	    padding: 0;
+	    margin:0;
+}
+
+ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+li {
+	display: inline;
+	width: 60px;
+	/*border: 1px solid grey;*/
+	margin: 15px;
+	line-height: 24px;
+	margin-left:0px;
+
+}
+
+a{
+	color: rgba(0,0,0,0.87);
+	text-decoration:none;
+	font-size: 13px;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+/* ========================== Contenu central ========================== */
+.content{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	height: 300px;
+	margin-top: 180px; !important
+}
+
+.logo{
+	width: 300px;
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: center;
+
+}
+
+.logo img{
+	width: 272px;
+	height: 92px;
+}
+
+
+.form{
+	display: flex;
+	flex-flow: wrap column;
+	align-items: center;
+	justify-content: space-around;
+	height: 150px;
+	width: 500px;
+}
+
+.searchbox{
+	display: flex;
+	flex-flow: nowrap row;
+	justify-content: center;
+	align-items: center;
+	width: 584px;
+	height: 44px;
+	margin: 0 auto;
+}
+
+.input:hover{
+	box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+
+.input{
+	width: 484px;
+	line-height: 44px;
+	font:16px arial,sans-serif;
+	height: 46px !important;
+	margin: 0 auto;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	border: none;
+	border-radius: 2px;
+}
+
+.mic{
+	width: 24px;
+	height: 24px;
+	display: flex;
+	flex-grow: wrap column;
+	justify-content: center;
+	margin: auto;
+	position: relative;
+	right: 75px;
+	cursor: pointer;
+}
+
+.mic img {
+	display: flex;
+	margin: auto;
+	width: 15px;
+}
+
+.buttons {
+	width: 320px;
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: space-around;
+
+}
+
+.recherche, .chance {
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: center;
+	background-color: #f2f2f2 ;
+	height: 36px;
+	line-height: 36px;
+	border : 1px solid #f2f2f2;
+	border-radius: 2px;
+	font-size: 13px;
+	font-weight: bold;
+	margin:11px 4px;
+	font-style: arial,sans-sherif;
+	min-width: 54px;
+	padding: 0 16px;
+	text-align: center;
+}
+
+.recherche a, .chance a {
+color: #75757A;
+}
+
+.recherche a:hover, .chance a:hover {
+	text-decoration: none;
+}
+
+.recherche:hover, .chance:hover {
+	-webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	border: 1px solid #c6c6c6;
+	color:#222;
+}
+
+/* ========================== NAVBAR header ========================== */
+
+/*Gestion de la navbar du header*/
+.navbar-main{
+	position: absolute;
+	top:18px;
+	width: 100%;
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: flex-end;
+	align-items: center;
+	height: 30px;
+	font-size: 13px;
+}
+
+/*Gestion des div contenus dans la navbar*/
+.navbar-main div {
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+/*Gestion des liens contenus dans la navbar*/
+.navbar-main a {
+	color: rgba(0,0,0,0.87);
+}
+
+
+/*Gestion de la div des Google App*/
+#app{
+	display: flex;
+	flex-flow: wrap column;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+}
+
+/*Gestion de l'icone des Google App*/
+#app img {
+	display: flex;
+	max-width: 15px;
+	opacity: 0.5;
+	margin: auto;
+}
+
+/*Gestion du changement de couleur lors du passage sur l'icone des Google App*/
+#app img:hover {
+	opacity: 0.87;
+}
+
+/*Customisation du bouton de connexion*/
+#login{
+	display: flex;
+	flex-flow: wrap column;
+	justify-content: center;
+	margin-right: 30px;
+	width: 93px;
+	background-color: #4285f4;
+	border: 1px solid #4285f4;
+	border-radius: 2px;
+	font-weight: bold;
+	color:#fff;
+	text-align: center;
+	height: 28px;
+	font-size: 13px;
+	cursor: default;
+}
+
+/*On ne veut pas le comportement par défaut des autre lien ici quand on le survole*/
+#link-login:hover{
+	text-decoration: none;
+	color:#fff;
+}
+
+
+/*========================== FOOTER ========================== */
+
+/*Gestion du footer*/
+.footer{
+	background-color:#f2f2f2 ;
+	color: rgba(0,0,0,.54);
+	line-height: 40px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%
+}
+
+/*Gestion des liens du footer*/
+.footer a {
+	color: #5f6368;
+}
+
+
+/*Gestion des div contenus dans le footer*/
+.footer div{
+	border-top: 1px solid #e4e4e4;	
+
+}
+
+/*Gestion de la div contenant le pays*/
+.pays{
+	font-size: 15px;
+	padding-left: 27px;
+	padding-right: 27px;
+}
+
+/*Gestion de la div contenant tous les liens du footer*/
+.liens{
+	font-size: 13px;
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: space-between;
+	padding-left: 27px;
+	padding-right: 27px;
+}
+
