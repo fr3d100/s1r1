@@ -11,36 +11,52 @@
 	<ul>
 		<li><a href="https://mail.google.com">Gmail</a></li>
 		<li><a href="https://www.google.fr/imghp?hl=fr&tab=wi">Images</a></li>
+		<li><a class="app" href="https://www.google.fr/intl/fr/about/products?tab=wh" title="Applications Google">Application</a></li>
+		<li><span class="btn-connexion" ><a href="https://accounts.google.com/ServiceLogin/signinchooser?hl=fr&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin"></a>Connexion</span></li>
 	</ul>
 </div>
 
 <div class="content">
-	<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-
-	<div class="form">
-	<form>
-		<div>
-			<input type="text" name="search">
-		</div>
-		<div class="buttons">
-			<input type="submit" name="recherche">
-			<input type="submit" name="chance">
-		</div>
-	</form>
+	
+	<div class="logo">
+		<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
 	</div>
 
+	<div class="form">
+		<div class="searchbox">
+			<div class="input"><input type="text" name="search" class="input"></div>
+			<div class="mic"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg"></div>
+		</div>
+		
+		<div class="buttons">
+			<div class="recherche"><a href="#">Recherche Google</a></div>
+			<div class="chance"><a href="#">J'ai de la chance</a></div>
+			
+		</div>
+	</div>
 
-<p>Pour bien démarrer l'année, <a href="https://www.google.com/url?q=https://learndigital.withgoogle.com/ateliersnumeriques%3Futm_source%3DHPP%26utm_medium%3Dreferral%26utm_campaign%3DFrance_HPP&source=hpp&id=19010446&ct=3&usg=AFQjCNFbyaDVTyWq98kbwDO94BTrAFAd6w&sa=X&ved=0ahUKEwiP997_zNzfAhUNz4UKHch7AsQQ8IcBCAc">formez-vous gratuitement au numérique avec Google</a></p>
 </div>
 
 <div class="footer">
+	
 	<div class="pays">France</div>
+	
 	<div class="liens">
-		<ul>
-			<li><a href="https://www.google.com/intl/fr_fr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicité</a></li>
-			<li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Entreprise</a></li>
-			<li><a href="https://www.google.com/intl/fr_fr/about/?utm_source=google-FR&utm_medium=referral&utm_campaign=hp-footer&fg=1">A propos</a></li>
-		</ul>
+		<div>
+			<ul>
+				<li><a href="https://www.google.com/intl/fr_fr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicité</a></li>
+				<li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Entreprise</a></li>
+				<li><a href="https://www.google.com/intl/fr_fr/about/?utm_source=google-FR&utm_medium=referral&utm_campaign=hp-footer&fg=1">A propos</a></li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li><a href="https://support.google.com/websearch?p=fr_consumer_info&hl=fr&fg=1&sa=X&ved=0ahUKEwjW-_zIvd3fAhVptosKHUI8DOUQ9NMDCAg">Info consommateurs</a></li>
+				<li><a href="https://www.google.fr/intl/fr_fr/policies/privacy/?fg=1">Confidentialité</a></li>
+				<li><a href="https://www.google.fr/intl/fr_fr/policies/terms/?fg=1">Conditions</a></li>
+				<li><a href="https://www.google.fr/preferences?hl=fr">Paramètres</a></li>
+			</ul>
+		</div>
 	</div>
 </div>
 
@@ -49,28 +65,13 @@
 
 <style type="text/css">
 
-.content{
-	border: solid 1px green;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	height: 1000px;
-}
+/* Elements généraux de la page*/
 
-.form{
-	border: solid 1px blue;
-	display: flex;
-	flex-direction: column;
-}
-
-.buttons {
-	border: solid 1px red;
-	width:200px;
-	display: flex;
-	flex-flux: wrap column;
-	justify-content: space-between;
+body {
+	    font-family: arial,sans-serif;
+	    color: #222;
+	    padding: 0;
+	    margin:0;
 }
 
 ul{
@@ -82,46 +83,203 @@ ul{
 li {
 	display: inline;
 	width: 60px;
-	border: 1px solid grey;
-	margin: 10px;
+	/*border: 1px solid grey;*/
+	margin: 15px;
 	line-height: 24px;
+	margin-left:0px;
 
 }
 
-.navbar{
-	display: flex;
-	justify-content: flex-end;
-}
-.navbar a {
+a{
 	color: rgba(0,0,0,0.87);
 	text-decoration:none;
+	font-size: 13px;
 }
-.navbar a:hover {
-	color: rgba(0,0,0,0.87);
+
+a:hover{
 	text-decoration:underline;
 }
 
-body {
-	    font-family: arial,sans-serif;
-	    color: #222;
+/*Contenu central*/
+.content{
+	border: solid 1px green;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	height: 350px;
+	margin-top: 180px; !important
 }
 
+.logo{
+	border: 1px solid green;
+	width: 300px;
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: center;
+
+}
+
+.logo img{
+	width: 272px;
+	height: 92px
+}
+
+
+.form{
+	border: solid 1px blue;
+	display: flex;
+	flex-flow: wrap column;
+	align-items: center;
+	justify-content: space-around;
+	height: 150px;
+	width: 584px;
+}
+
+.searchbox{
+	border: 1px solid yellow;
+	display: flex;
+	flex-flow: nowrap row;
+	width: 584px;
+	height: 44px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	margin: 0 auto;
+}
+
+.searchbox:hover{
+	box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+
+.input{
+	width: 584px;
+	line-height: 34px;
+	font:16px arial,sans-serif;
+	height: 34px !important;
+	margin: 0 auto;
+}
+
+.mic{
+	border: 1px solid red;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	flex-grow: wrap row;
+	justify-content: center;
+	margin: auto;
+	position: relative;
+	right: 40px;
+	cursor: pointer;
+}
+
+.mic img {
+	width: 15px;
+}
+
+.buttons {
+	border: solid 1px red;
+	width: 320px;
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: space-around;
+
+}
+
+.recherche, .chance {
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: center;
+	background-color: #f2f2f2 ;
+	height: 36px;
+	line-height: 36px;
+	border : 1px solid #f2f2f2;
+	border-radius: 2px;
+	font-size: 13px;
+	font-weight: bold;
+	margin:11px 4px;
+	font-style: arial,sans-sherif;
+	min-width: 54px;
+	padding: 0 16px;
+	text-align: center;
+}
+
+.recherche a, .chance a {
+color: #75757A;
+}
+
+.recherche a:hover, .chance a:hover {
+	text-decoration: none;
+}
+
+.recherche:hover, .chance:hover {
+	-webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	border: 1px solid #c6c6c6;
+	color:#222;
+}
+
+/*========== HEADER ========== */
+.navbar{
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	top: 8px;
+	right: 0;
+	width: 100%
+}
+
+.btn-connexion{
+	border:1px solid #4285f4;
+	font-weight: bold;
+	outline: none;
+	background:#4285f4; 
+	background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+	color: #fff;
+	cursor: default;
+	line-height: 28px;
+	padding-top: 0 12px;
+	border-radius: 2px;
+	font-size: 13px;
+	padding: 5px;
+
+}
+
+
+
+/*Footer*/
 .footer{
 	background-color:#f2f2f2 ;
 	color: rgba(0,0,0,.54);
 	line-height: 40px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%
 }
+
+.footer a {
+	color: #5f6368;
+}
+
 
 .footer div{
 	border-top: 1px solid #e4e4e4;	
-	padding-left: 27px;
+
 }
 .pays{
 	font-size: 15px;
+	padding-left: 27px;
+	padding-right: 27px;
 }
 
 .liens{
 	font-size: 13px;
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: space-between;
+	padding-left: 27px;
+	padding-right: 27px;
 }
 
 </style>
